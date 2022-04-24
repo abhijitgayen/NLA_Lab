@@ -1,0 +1,11 @@
+clc;
+clear All;
+close ;
+m=7;
+n=4;
+A=randn(m,n);
+fprintf('befor rank');
+disp(rank(A));
+A(:,5:6) = A(:,2:3) +A(:,3:4); 
+fprintf('after rank');
+disp(rank(A));
